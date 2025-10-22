@@ -60,6 +60,15 @@ public class AtividadePratica {
                 }
                 System.out.println();
             }
+
+            try {
+                int valorInvalido = numeros[10]; //
+                System.out.println("Valor: " + valorInvalido);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Erro: Você tentou acessar uma posição inválida do array.");
+            }
+
+            System.out.println("Programa continua normalmente após tratar a exceção.");
         }
     }
 
